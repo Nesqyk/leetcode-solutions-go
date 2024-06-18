@@ -1,5 +1,8 @@
 package main
 
+import "leetcode-solutions-go/problem"
+
 func main() {
-	print("Hello World!")
+	problem.Test()
+	print("\nHello World!")
 }
