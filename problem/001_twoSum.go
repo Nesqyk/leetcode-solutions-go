@@ -16,6 +16,8 @@ func TwoSum(nums []int, target int) []int {
 }
 
 func Test() {
-	fmt.Println(TwoSum([]int{2, 9, 11, 15}, 11))
-	fmt.Println(IsPalindrome(121))
+	fmt.Println(TwoSum([]int{2, 9, 11, 15}, 11),
+		IsPalindrome(121),
+		romanToInt("1000"),
+		longestCommonPrefix([]string{"flashlight", "flash", "flesh"}))
 }
