@@ -1,12 +1,11 @@
 package problem
 
-func IsPalindrome(x int) bool {
-	// Negative numbers are not palindromes
-	if x < 0 {
-		return false
-	}
+import "fmt"
 
-	// Variables to store the original number and the reversed number
+func IsPalindrome(x int) (check bool, err error) {
+	if x < 0 {
+		return false, fmt.Errorf("negative integers are not palindromes")
+	}
 	original := x
 	var reverse int
 
@@ -17,5 +16,5 @@ func IsPalindrome(x int) bool {
 	}
 
 	// Check if the reversed number is the same as the original
-	return original == reverse
+	return original == reverse, nil
 }
